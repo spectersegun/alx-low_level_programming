@@ -1,38 +1,36 @@
-#include "main.h"
-
+i#include <stdio.h>
 /**
- * main - Almighty Fizzbuzz, prints number from 1 to 100,
- *	  but any number which is a multiple of 3, prints fizz
- *	  and any number which is a multiple of five prints Buzz
- *	  and number both multiple of 3 and 5 prints fizzbuzz
-		 *
- * Return: 0 if true.
+ *main - replace multiples of 3 and 5.
+ *
+ *Return: 0.
  */
-
 int main(void)
 {
-	int number;
+	int i;
 
-	for (number = 1; number <= 100; number++)
+	for (i = 1; i <= 100; i++)
 	{
-		if ((number % 3 == 0) && (number % 5 == 0))
+		if (i % 3 == 0 &&  i % 5 == 0)
 		{
-			printf("FizzBuzz");
+			printf("%s", "FizzBuzz");
 		}
-		else if (number % 5 == 0)
+		else if (i % 3 == 0)
 		{
-			printf("Buzz");
+			printf("%s", "Fizz");
 		}
-		else if (numbe5 % 3 == 0)
+		else if (i % 5 == 0)
 		{
-			printf("Fizz");
+			printf("%s", "Buzz");
 		}
 		else
 		{
-			printf("%d", number);
+			printf("%d", i);
+		}
+		if (i != 100)
+		{
+			printf(" ");
 		}
 	}
 	printf("\n");
-
 	return (0);
 }
