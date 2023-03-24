@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 
 /**
  * print_diagonal - prints a diagonal line using \ character
@@ -11,10 +11,16 @@ void print_diagonal(int n)
 
 	if (n > 0)
 	{
-		for (length = 1; length < n; length++)
+		for (length = 0; length < n; length++)
 		{
-			_putchar('\');
+			for (space = 0; space < length; space++)
+				_putchar(' ');
+			_putchar('\\');
 
+			if (length == n - 1)
+				continue;
+
+			_putchar('\n');
 		}
 	}
 	_putchar('\n');
