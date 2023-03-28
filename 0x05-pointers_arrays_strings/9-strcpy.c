@@ -8,11 +8,17 @@
  *
  * Return: the pointer to dest
  */
-char *_strcpy(char *dest, char *src) {
-    char *p = dest;
-    while (*src != '\0') {
-        *p++ = *src++;
-    }
-    *p = '\0';
-    return dest;
+char *_strcpy(char *dest, char *src)
+{
+	unsigned int i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = src[i];
+	return (dest);
 }
+
