@@ -1,18 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - This is the main function
- * Return: zero if error and non zero if no error
+ * main - Entry point of code
+ *
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	printf("Size of char: %lu byte(s)\n", sizeof(char));
-   	printf("Size of int: %lu byte(s)\n", sizeof(int));
-   	printf("Size of float: %lu byte(s)\n", sizeof(float));
-    	printf("Size of double: %lu byte(s)\n", sizeof(double));
-    	printf("Size of long: %lu byte(s)\n", sizeof(long));
-    	printf("Size of long long: %lu byte(s)\n", sizeof(long long));
-    	printf("Size of short: %lu byte(s)\n", sizeof(short));
-	return (0);
+char acharacter;
+int aint;
+long along;
+long long alonglong;
+float afloat;
+
+printf("Size of a char: %lu byte(s)\n", sizeof(acharacter));
+printf("Size of an int: %lu byte(s)\n", sizeof(aint));
+printf("Size of a long int: %lu byte(s)\n", sizeof(along));
+printf("Size of a long long int: %lu byte(s)\n", sizeof(alonglong));
+printf("Size of a float: %lu byte(s)\n", sizeof(afloat));
+
+return (0);
 }
