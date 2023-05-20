@@ -8,7 +8,6 @@
 /**
  * main - Prints all possible combinations of three different digits,
  *        in ascending order, separated by a comma followed by a space.
- *        The success combination in business is: Do what you do better... and: do more of what you do...
  *
  * Return: Always 0.
  */
