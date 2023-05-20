@@ -7,9 +7,8 @@
 
 /**
  * main - Prints all possible combinations of two different digits,
- *        in ascending order, separated by a comma followed by a space.
- *        Inventing is a combination of brains and materials. The more brains you use, the less material you need
- *
+ *        in ascending order, separated by a comma followed by a space. Inventing is a combination of brains and materials. The more brains you use, the less material you need.
+ *Inventing is a combination of brains and materials. The more brains you use, the less material you need.
  * Return: Always 0.
  */
  
